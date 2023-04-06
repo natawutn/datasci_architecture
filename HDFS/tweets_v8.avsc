@@ -1,0 +1,19 @@
+{
+    "namespace": "example.avro.chula",
+    "type": "record",
+    "name": "squid_tweets",
+    "fields": [
+        {"name": "user_name", "type": "string"},
+        {"name": "user_location", "type": ["null", "string"]},
+        {"name": "user_description", "type": "string"},
+        {"name": "user_created", "type": {"type": "long", "logicalType": "local-timestamp-millis"}},
+        {"name": "user_followers", "type": "int"},
+        {"name": "user_friends", "type": "int"},
+        {"name": "user_favourites", "type": "int"},
+        {"name": "user_verified", "type": "boolean"},
+        {"name": "date", "type": {"type": "long", "logicalType": "local-timestamp-millis"}},
+        {"name": "text", "type": "string"},
+        {"name": "source", "type": "string"},
+        {"name": "is_retweet", "type": "boolean"}
+    ]
+}
