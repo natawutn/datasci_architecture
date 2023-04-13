@@ -1,0 +1,44 @@
+# This docker compose file is adapted from https://hub.docker.com/_/cassandra
+version: '3'
+
+services:
+  cs_0:
+    image: cassandra
+    container_name: cs_0
+    networks:
+      - cs_net
+    environment:
+      CASSANDRA_SEEDS: cs_0, cs_1, cs_2
+
+  cs_1:
+    image: cassandra
+    container_name: cs_1
+    depends_on:
+      - cs_0
+    networks:
+      - cs_net
+    environment:
+      CASSANDRA_SEEDS: cs_0, cs_1, cs_2
+
+  cs_2:
+    image: cassandra
+    container_name: cs_2
+    depends_on:
+      - cs_0
+    networks:
+      - cs_net
+    environment:
+      CASSANDRA_SEEDS: cs_0, cs_1, cs_2
+
+  # cs:
+  #   image: cassandra
+  #   networks: 
+  #     - cs_net
+  #   deploy:
+  #     mode: replicated
+  #     replicas: 2
+  #   environment:
+  #     CASSANDRA_SEEDS: cs_0
+
+networks:
+  cs_net:
