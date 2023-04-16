@@ -31,7 +31,7 @@ if not table.exists():
 
 # our data
 all_dishes = [
-    {'name': 'Pad_Thai', 'cuisine': 'Thai', 'general': {'category': 'Noodle'}, 'ingredients': [{'item': 'noodle', 'quantity': 125, 'unit': 'g'}, {'item': 'chicken', 'quantity': 150, 'unit': 'g'}, {'item': 'brown sugar', 'quantity': 3, 'unit': 'tbsp'}]},
+    {'name': 'Pad_Thai', 'cuisine': 'Thai', 'general': {'category': 'Noodle'}, 'ingredients': [{'item': 'noodle', 'quantity': 125, 'unit': 'g'}, {'item': 'shrimp', 'quantity': 150, 'unit': 'g'}, {'item': 'brown sugar', 'quantity': 3, 'unit': 'tbsp'}]},
     {'name': 'Sashimi', 'cuisine': 'Japanese', 'general': {'category': 'Seafood'}, 'ingredients': [{'item': 'rice', 'quantity': 100, 'unit': 'g'}, {'item': 'salmon', 'quantity': 50, 'unit': 'g'}]},
     {'name': 'Chicken_Rice', 'cuisine': 'Thai', 'general': {'category': 'Rice'}, 'ingredients': [{'item': 'rice', 'quantity': 300, 'unit': 'g'}, {'item': 'chicken', 'quantity': 100, 'unit': 'g'}]},
     {'name': 'Tom_Yum', 'cuisine': 'Thai', 'general': {'category': 'Soup'}, 'ingredients': [{'item': 'shrimp', 'quantity': 200, 'unit': 'g'}, {'item': 'water', 'quantity': 500, 'unit': 'g'}, {'item': 'lemon grass', 'quantity': 10, 'unit': 'leaves'}]}
