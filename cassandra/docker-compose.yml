@@ -30,15 +30,5 @@ services:
     environment:
       CASSANDRA_SEEDS: cs_0, cs_1, cs_2
 
-  # cs:
-  #   image: cassandra
-  #   networks: 
-  #     - cs_net
-  #   deploy:
-  #     mode: replicated
-  #     replicas: 2
-  #   environment:
-  #     CASSANDRA_SEEDS: cs_0
-
 networks:
   cs_net:

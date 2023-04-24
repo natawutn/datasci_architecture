@@ -1,0 +1,10 @@
+# This docker compose file is adapted from https://hub.docker.com/_/redis
+version: '3'
+
+services:
+  redis:
+    image: redis
+    container_name: redis
+    ports:
+      - 6379:6379
+  
