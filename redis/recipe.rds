@@ -1,0 +1,12 @@
+HMSET dish:101 id 101 name "Pad Thai" cuisine “thai” category "noodle"
+
+HGETALL dish:101
+
+SADD d_ing:101 "noodle;125;g"
+SADD d_ing:101 "shrimp;150;g"
+SADD d_ing:101 "brown sugar;3;tbsp"
+
+SADD cuisine:thai "101"
+
+SCARD d_ing:101
+SMEMBERS d_ing:101
