@@ -6,3 +6,4 @@ services:
     container_name: zookeeper
     ports:
       - "2181:2181"
+
