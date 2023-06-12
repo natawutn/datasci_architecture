@@ -1,4 +1,4 @@
-HMSET dish:101 id 101 name "Pad Thai" cuisine “thai” category "noodle"
+HMSET dish:101 id 101 name "Pad Thai" cuisine "thai" category "noodle"
 
 HGETALL dish:101
 
